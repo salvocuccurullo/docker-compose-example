@@ -1,0 +1,15 @@
+version: "3.2"
+
+services:
+  mysql:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: mysql
+    ports:
+      - "3399:3306"
+    volumes:
+      - ./mysql/data:/var/lib/mysql:rw
+    environment:
+      -  MYSQL_ROOT_PASSWORD=superSecretPassword123456
+    restart: always
+
