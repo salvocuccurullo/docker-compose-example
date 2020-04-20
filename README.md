@@ -19,4 +19,8 @@ Build (in this example it's no needed since mysql image is fetched from docker h
 
 ---
 In this example the docker compose set the container port on localhost to 3399
+
+For connecting to MySQL:
+
+
 `mysql -h 127.0.0.1 -u root -P 3399 -p`
